@@ -1,0 +1,51 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color:#746060;
+            /*鼠标点击 文字时 会出现蓝色阴影   取消掉*/
+            /*使用 CSS 控制样式阻止内容被选中*/
+            -moz-user-select: none; /*火狐*/
+            -webkit-user-select: none; /*webkit浏览器*/
+            -ms-user-select: none; /*IE10*/
+            -khtml-user-select: none; /*早期浏览器*/
+            user-select: none;            
+        }
+        .cell{
+            position: absolute;
+            font-weight:900;
+            font-size:24px;
+            border:2px solid green;
+            /*background-color:white; */
+        }
+        #option{
+            width: 300px;
+            height: 30px;
+            background-color: #eee;
+            position: relative;
+            margin: 0 auto;
+            color: #fff;
+        }
+        #option #again{
+            width: 50%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #452142;
+            float: left;
+            cursor: pointer;
+        }
+        #option #again:hover{
+            background-color:yellow;
+            color:#000;
+        }        
+        #option #timing{
+            width: 50%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #467876;
+            float: left;           
+        }
